@@ -110,6 +110,42 @@ header.banner img {
     flex: 1;
 }
 
+.skill-categories {
+    display: flex;
+}
+
+.skill-category {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.skill-category:first-child {
+    margin-left: 0px;
+}
+
+.skill-categories .skill-category-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    transform: translateX(-5px);
+}
+
+.skill-list .skill-item {
+    font-size: .8rem;
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 5px;
+}
+
 @media (max-width: 768px) {
     .about-me {
         flex-direction: column;
