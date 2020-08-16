@@ -56,7 +56,8 @@ header.banner img {
     max-height: 35vh;
 }
 
-.main {
+.main,
+.skills-section {
     display: flex;
     flex-direction: column;
     margin: 25px 50px;
@@ -146,12 +147,37 @@ header.banner img {
     margin: 5px;
 }
 
+.skills-section .skill-content {
+    margin-top: 25px;
+}
+
+.skills-section .squares {
+    display: flex;
+}
+
+.skills-section .squares .skill-square {
+    /* display: flex; */
+    position: relative;
+    border: 1px solid #000;
+    margin: 60px;
+    /* margin-left: 60px;; */
+}
+
+.skills-section .squares .skill-square svg {
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 120px;
+    transform: translateX(-60px) translateY(-60px);
+}
+
 @media (max-width: 768px) {
     .about-me {
         flex-direction: column;
     }
 
-    .main {
+    .main,
+    .skills-section {
         margin: 25px 25px;
     }
 }
