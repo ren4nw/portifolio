@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .main,
+    .skills-section {
+        margin: 25px 25px;
+    }
+}

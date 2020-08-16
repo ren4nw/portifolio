@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.main,
+.skills-section {
+    @extend %content;
+}

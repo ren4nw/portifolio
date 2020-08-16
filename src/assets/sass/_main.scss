@@ -1,0 +1,81 @@
+.main {
+    .name {
+        text-align: center;
+
+        h1 {
+            font-size: $subtitle-size;
+        }
+
+        .contact {
+            margin-top: 15px;
+
+            .to-contact {
+                margin-left: 15px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+
+            svg {
+                width: 36px;
+                height: 36px;
+
+                &:hover {
+                    animation: move 500ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        display: flex;
+        margin-top: 1.4em;
+        font-size: 1.1rem;
+
+        h2 {
+            font-size: $subtitle-size;
+        }
+
+        &> div {
+            flex: 1;
+        }
+
+        .skill-categories {
+            display: flex;
+
+            .skill-category {
+                flex: 1;
+                margin-left: 40px;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+
+                .skill-category-name {
+                    font-size: $medium-size;
+                    font-weight: 800;
+                }
+
+                .skill-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 5px;
+                    transform: translateX(-5px);
+
+                    .skill-item {
+                        font-size: $small-size;
+                        background-color: #444;
+                        color: #fff;
+                        padding: 5px;
+                        border-radius: 9px;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
