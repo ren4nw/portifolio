@@ -1,0 +1,34 @@
+.skills-section {
+
+    .squares {
+        display: flex;
+        margin-top: 40px;
+
+        .skill-square {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 40px 15px;
+            box-shadow: 0px 0px 15px -5px #000;
+            border-radius: 15px;
+
+            svg {
+                position: absolute;
+                top: -60px;
+                width: 120px;
+                height: 120px;
+            }
+
+            .name {
+                margin-top: 80px;
+                font-size: $medium-size;
+                font-weight: 900;
+            }
+
+            .description {
+                padding: 15px;
+            }
+        }
+    }
+}
