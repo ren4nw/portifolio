@@ -21,7 +21,7 @@
     }
 
     .image {
-        @include background('../imgs/me.jpg');
+        @include background('../imgs/me.jpeg');
         bottom: 0;
         width: 15em;
         height: 15em;
