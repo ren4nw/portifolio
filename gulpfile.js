@@ -44,6 +44,12 @@ gulp.task('watch', async () => {
     watch('./src/assets/imgs/**/*.jpg', series('imgs'));
 });
 
-module.exports.default = series(
+const tasks = [
     parallel('html', 'sass', 'js', 'imgs')
-);
+];
+
+if (process.env.ENV === 'development') {
+    tasks.push('watch');
+}
+
+module.exports.default = series(...tasks);

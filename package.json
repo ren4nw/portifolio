@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:ren4nw/portifolio.git",
-  "author": "Your Name <you@example.com>",
+  "author": "Ren4nw <yung66@protonmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "env ENV=development gulp",
+    "build": "env ENV=production gulp"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
