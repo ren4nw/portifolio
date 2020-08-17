@@ -2,10 +2,6 @@
     .name {
         text-align: center;
 
-        h1 {
-            font-size: $subtitle-size;
-        }
-
         .contact {
             margin-top: 15px;
 
@@ -33,10 +29,6 @@
         display: flex;
         margin-top: 1.4em;
         font-size: 1.1rem;
-
-        h2 {
-            font-size: $subtitle-size;
-        }
 
         &> div {
             flex: 1;

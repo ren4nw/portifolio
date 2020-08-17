@@ -15,7 +15,7 @@ const effect = (square, time = 2000) => {
     })
 }
 
-const moveSquare = (i) => {
+const moveSquare = (i = 0) => {
     if (i >= squaresLength) {
         i = 0;
     }

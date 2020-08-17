@@ -1,10 +1,15 @@
 @media (max-width: 768px) {
     .about-me {
         flex-direction: column;
+
+        .skills {
+            margin-top: 25px;
+        }
     }
 
     .main,
-    .skills-section {
+    .skills-section,
+    .experiences-section {
         margin: 25px 25px;
     }
 }
@@ -12,5 +17,11 @@
 @media (max-width: 425px) {
     .line {
         flex-direction: column;
+    }
+
+    .experiences-items {
+        .experience-item {
+            flex-direction: column;
+        }
     }
 }

@@ -1,0 +1,38 @@
+.experiences-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    font-size: .9rem;
+
+    box-shadow: -7px -7px 20px -21px #3e15bb, 40px 40px 20px -50px #de2323;
+    // 4px 4px 20px -18px #3e15bb
+    // -7px -7px 20px -21px #3e15bb, 40px 40px 20px -50px #de2323
+
+    .experience-item {
+        display: flex;
+        border-bottom: 1px solid #e4e4e4;
+        align-items: center;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        svg {
+            width: 120px;
+            height: 120px;
+        }
+
+        .experience-more {
+            flex: 1;
+            margin-left: 25px;
+
+            padding: 15px;
+            
+            .title {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
