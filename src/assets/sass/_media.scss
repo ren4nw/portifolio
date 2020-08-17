@@ -7,7 +7,9 @@
     .skills-section {
         margin: 25px 25px;
     }
+}
 
+@media (max-width: 425px) {
     .line {
         flex-direction: column;
     }

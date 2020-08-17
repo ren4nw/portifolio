@@ -1,4 +1,29 @@
+@mixin animation($y, $animationName) {
+    @keyframes #{$animationName} {
+        0% {
+            transform: translateY(0px);
+        }
+        35% {
+            transform: translateY(#{$y}px);
+        }
+        80% {
+            transform: translateY(-#{$y}px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
+
 .skills-section {
+
+    margin-top: 40px;
+
+    .skill-name {
+        font-size: $subtitle-size;
+        font-weight: 200;
+        text-align: center;
+    }
 
     .squares {
         display: flex;
@@ -7,6 +32,7 @@
 
         .line {
             display: flex;
+            justify-content: space-evenly;
 
             .skill-square {
                 display: flex;
@@ -14,18 +40,46 @@
                 align-items: center;
                 position: relative;
                 margin: 40px 15px;
-                box-shadow: 0px 0px 15px -5px #000;
+                box-shadow: 4px 4px 20px -12px #3e15bb;
+                // 20px 20px 20px -25px #3e15bb, -5px -5px 25px -25px #e81e4d
                 border-radius: 15px;
+                font-size: $small-size;
+                transform: scale(.9);
+                opacity: .9;
+                transition: all 1s;
+
+                // @include animation(5, updown1);
+                // @include animation(9, updown2);
+
+                // &:nth-child(1) {
+                //     animation: updown1 2000ms;
+                //     animation-iteration-count: infinite;
+                //     animation-timing-function: linear;
+                //     animation-fill-mode: forwards;
+                // }
+
+                // &:nth-child(2) {
+                //     animation: updown2 4000ms;
+                //     animation-delay: 1s;
+                //     animation-iteration-count: infinite;
+                //     animation-timing-function: linear;
+                // }
+
+                // &:nth-child(3) {
+                //     animation: updown1 2000ms;
+                //     animation-iteration-count: infinite;
+                //     animation-timing-function: linear;
+                // }
     
                 svg {
                     position: absolute;
-                    top: -60px;
-                    width: 120px;
-                    height: 120px;
+                    top: -40px;
+                    width: 80px;
+                    height: 80px;
                 }
     
                 .name {
-                    margin-top: 80px;
+                    margin-top: 60px;
                     font-size: $medium-size;
                     font-weight: 900;
                 }
@@ -35,5 +89,20 @@
                 }
             }
         }
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(0px);
+    }
+    35% {
+        transform: translateY(5px);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }

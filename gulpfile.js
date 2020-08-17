@@ -1,5 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
@@ -20,6 +22,16 @@ gulp.task('sass', async () => {
         .pipe(gulp.dest('./build/css'));
 });
 
+gulp.task('js', async () => {
+    gulp.src('./src/assets/js/**/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(uglify())
+        .pipe(concat('app.min.js'))
+        .pipe(gulp.dest('./build/js'))
+})
+
 gulp.task('imgs', async () => {
     gulp.src('./src/assets/imgs/**/*.jpg')
         .pipe(gulp.dest('./build/imgs'));
@@ -27,11 +39,12 @@ gulp.task('imgs', async () => {
 
 gulp.task('watch', async () => {
     watch('./src/assets/sass/**/*.scss', series('sass'));
+    watch('./src/assets/js/**/*.js', series('js'));
     watch('./src/**/*.html', series('html'));
     watch('./src/assets/imgs/**/*.jpg', series('imgs'));
 });
 
 module.exports.default = series(
-    parallel('html', 'sass', 'imgs'),
+    parallel('html', 'sass', 'js', 'imgs'),
     'watch'
 );
