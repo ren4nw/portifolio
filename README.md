@@ -2,7 +2,7 @@
 
 [![Build Status](https://api.travis-ci.org/ren4nw/portifolio.svg?branch=master)](https://travis-ci.org/github/ren4nw/portifolio)
 
-Este é meu primeiro portfólio, você é livre para utilizar-ló e fazer suas alterações 😄.
+Este é meu primeiro portfólio, você é livre para utilizar-ló e fazer suas alterações 😄.  
 Foi utilizado as seguintes tecnologias para a construção deste projeto:
   - HTML5
   - SASS
@@ -40,7 +40,7 @@ ou
 
 #### Depois disto está tudo pronto 😍
 No ambiente de desenvolvimento utilize:
-``` yarn start ``` ou ``` npm start ```
+``` yarn start ``` ou ``` npm start ```  
 No ambiente de produção utilize:
 ``` yarn build ``` ou ``` npm run ```
 
