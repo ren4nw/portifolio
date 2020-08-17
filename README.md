@@ -39,9 +39,9 @@ ou
 ``` npm install ```
 
 #### Depois disto está tudo pronto 😍
-No ambiente de desenvolvimento utilize:
+No ambiente de desenvolvimento utilize:  
 ``` yarn start ``` ou ``` npm start ```  
-No ambiente de produção utilize:
+No ambiente de produção utilize:  
 ``` yarn build ``` ou ``` npm run ```
 
 ## Licença
