@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-yarn gulp
+yarn build
 
 SOURCE_BRANCH="master"
 

@@ -52,4 +52,4 @@ if (process.env.ENV === 'development') {
     tasks.push('watch');
 }
 
-module.exports.default = series(...tasks);
+module.exports.default = series(tasks);
