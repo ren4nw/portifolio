@@ -45,6 +45,5 @@ gulp.task('watch', async () => {
 });
 
 module.exports.default = series(
-    parallel('html', 'sass', 'js', 'imgs'),
-    'watch'
+    parallel('html', 'sass', 'js', 'imgs')
 );
