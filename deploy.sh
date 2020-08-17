@@ -29,8 +29,6 @@ git config user.email "yung66@protonmail.com"
 git add .
 git commit -m "Deploy to GitHub Pages"
 
-echo "REF: ${GH_REF}"
-
 # Forçando o push do master para a branch gh-pages (Toda história anterior da branch
 # gh-pages será perdido, pois vamos substituí-lo.)  Redirecionamos qualquer saída para
 # /dev/null para ocultar quaisquer dados de credenciais sensíveis que de outra forma possam ser expostos.
