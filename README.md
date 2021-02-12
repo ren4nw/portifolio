@@ -43,7 +43,7 @@ No ambiente de desenvolvimento utilize:
 ``` yarn start ``` ou ``` npm start ```  
 
 No ambiente de produção utilize:  
-``` yarn build ``` ou ``` npm run ```
+``` yarn build ``` ou ``` npm run build```
 
 ## Licença
 MIT
